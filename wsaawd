@@ -1,0 +1,377 @@
+[1mdiff --git a/CSS/bolum-3/uygulama-stayling-plans.html b/CSS/bolum-3/uygulama-stayling-plans.html[m
+[1mdeleted file mode 100644[m
+[1mindex 305891a..0000000[m
+[1m--- a/CSS/bolum-3/uygulama-stayling-plans.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,371 +0,0 @@[m
+[31m-<!DOCTYPE html>[m
+[31m-<html lang="en">[m
+[31m-  <head>[m
+[31m-    <meta charset="UTF-8" />[m
+[31m-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />[m
+[31m-    <title>Document</title>[m
+[31m-    <link[m
+[31m-      rel="stylesheet"[m
+[31m-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"[m
+[31m-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="[m
+[31m-      crossorigin="anonymous"[m
+[31m-      referrerpolicy="no-referrer"[m
+[31m-    />[m
+[31m-    <link rel="preconnect" href="https://fonts.googleapis.com" />[m
+[31m-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />[m
+[31m-    <link[m
+[31m-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"[m
+[31m-      rel="stylesheet"[m
+[31m-    />[m
+[31m-    <style>[m
+[31m-      * {[m
+[31m-        box-sizing: border-box;[m
+[31m-      }[m
+[31m-      body {[m
+[31m-        margin: 0;[m
+[31m-        font-family: "Lato", sans-serif;[m
+[31m-        font-weight: 400;[m
+[31m-        font-style: normal;[m
+[31m-      }[m
+[31m-      #showcase {[m
+[31m-        background: url("../../Images/home-bg.jpeg");[m
+[31m-        background-position: center;[m
+[31m-        height: 500px;[m
+[31m-        width: 100%;[m
+[31m-        padding: 10px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-header {[m
+[31m-        background-color: #fc997c;[m
+[31m-        padding: 8px 16px;[m
+[31m-      }[m
+[31m-      .main-nav {[m
+[31m-        width: calc(100% - 101px);[m
+[31m-        display: inline-block;[m
+[31m-        text-align: right;[m
+[31m-      }[m
+[31m-      .main-nav__items {[m
+[31m-        margin: 0;[m
+[31m-        padding: 0;[m
+[31m-        list-style: none;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-nav__item {[m
+[31m-        display: inline-block;[m
+[31m-        margin: 0 10px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-header__logo {[m
+[31m-        color: #fff;[m
+[31m-        text-decoration: none;[m
+[31m-        font-weight: bold;[m
+[31m-        font-size: 21px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-nav__item a {[m
+[31m-        text-decoration: none;[m
+[31m-        color: #fff;[m
+[31m-        font-family: "Roboto", sans-serif;[m
+[31m-        font-weight: 400;[m
+[31m-        font-style: normal;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-nav__item a:hover,[m
+[31m-      .main-nav__item:hover::before {[m
+[31m-        text-decoration: none;[m
+[31m-        color: #2e3c6d;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-nav__item a:active {[m
+[31m-        content: "\2022";[m
+[31m-        text-decoration: none;[m
+[31m-        color: #fff;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-nav__item::before {[m
+[31m-        color: #fff;[m
+[31m-        content: "\2022";[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-nav__item:active::before {[m
+[31m-        content: none;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-nav__item--login a {[m
+[31m-        background-color: #2e3c6d;[m
+[31m-        border: 2px solid #fff;[m
+[31m-        color: #fff;[m
+[31m-        padding: 4px 16px;[m
+[31m-        border-radius: 8px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-nav__item--login a:hover {[m
+[31m-        background-color: #fff;[m
+[31m-        border: 2px solid #2e3c6d;[m
+[31m-        color: #2e3c6d;[m
+[31m-        padding: 4px 16px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .main-nav__item--login::before {[m
+[31m-        content: none;[m
+[31m-      }[m
+[31m-[m
+[31m-      #how-it-works {[m
+[31m-        padding: 10px;[m
+[31m-        text-align: center;[m
+[31m-      }[m
+[31m-[m
+[31m-      #how-it-works h2 {[m
+[31m-        color: #3e4555;[m
+[31m-        font-size: 30px;[m
+[31m-        font-weight: 600;[m
+[31m-      }[m
+[31m-[m
+[31m-      .row {[m
+[31m-        margin-bottom: 40px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .col-3 {[m
+[31m-        width: 30%;[m
+[31m-        display: inline-block;[m
+[31m-        padding: 16px;[m
+[31m-        margin: 8px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .col-2 {[m
+[31m-        width: calc(50% - 2px);[m
+[31m-        height: 350px;[m
+[31m-        background-color: gray;[m
+[31m-        display: inline-block;[m
+[31m-      }[m
+[31m-[m
+[31m-      .icon-box h3 {[m
+[31m-        color: #3e4555;[m
+[31m-        font-size: 26px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .icon-box i {[m
+[31m-        color: #fc997c;[m
+[31m-      }[m
+[31m-[m
+[31m-      .features__left {[m
+[31m-        background: url("../../Images/features.jpeg");[m
+[31m-        background-position: center top;[m
+[31m-        background-size: cover;[m
+[31m-      }[m
+[31m-[m
+[31m-      .features__right {[m
+[31m-        background-color: #edf5f7;[m
+[31m-        padding: 40px;[m
+[31m-        vertical-align: top;[m
+[31m-      }[m
+[31m-[m
+[31m-      #features a {[m
+[31m-        background-color: #fc997c;[m
+[31m-        color: #fff;[m
+[31m-        padding: 7px 15px;[m
+[31m-        text-decoration: none;[m
+[31m-        font-size: 14px;[m
+[31m-        text-align: center;[m
+[31m-        border: 1px solid #fc997c;[m
+[31m-        border-radius: 3px;[m
+[31m-        display: inline-block;[m
+[31m-        margin-top: 15px;[m
+[31m-      }[m
+[31m-[m
+[31m-      #features a:hover {[m
+[31m-        background-color: #fff;[m
+[31m-        border: 1px solid #fc997c;[m
+[31m-        color: #fc997c;[m
+[31m-        border-radius: 3px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .section-title {[m
+[31m-        text-align: center;[m
+[31m-      }[m
+[31m-[m
+[31m-      .plan {[m
+[31m-        text-align: center;[m
+[31m-        padding: 5px;[m
+[31m-        width: 33.3%;[m
+[31m-        float: left;[m
+[31m-      }[m
+[31m-[m
+[31m-      .plan__badge {[m
+[31m-        background: #fff;[m
+[31m-        color: #fc997c;[m
+[31m-        padding: 8px;[m
+[31m-        border-radius: 5px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .recommended_plan {[m
+[31m-        color: #fff;[m
+[31m-        background-color: #396eb0 !important;[m
+[31m-      }[m
+[31m-[m
+[31m-      .clearfix::after {[m
+[31m-        content: "";[m
+[31m-        display: block;[m
+[31m-        clear: both;[m
+[31m-      }[m
+[31m-[m
+[31m-      .plan__features {[m
+[31m-        list-style-type: none;[m
+[31m-        margin: 0;[m
+[31m-        padding: 0;[m
+[31m-      }[m
+[31m-[m
+[31m-      .plan__features li {[m
+[31m-        margin: 6px 0;[m
+[31m-      }[m
+[31m-[m
+[31m-      .container {[m
+[31m-        width: 1000px;[m
+[31m-        margin: 0 auto;[m
+[31m-      }[m
+[31m-[m
+[31m-      .inner-plan {[m
+[31m-        background-color: #edf5f7;[m
+[31m-        padding: 25px 10px;[m
+[31m-        border-radius: 5px;[m
+[31m-      }[m
+[31m-    </style>[m
+[31m-  </head>[m
+[31m-  <body>[m
+[31m-    <header class="main-header">[m
+[31m-      <a href="#" class="main-header__logo">MovieApp</a>[m
+[31m-      <nav class="main-nav">[m
+[31m-        <ul class="main-nav__items">[m
+[31m-          <li class="main-nav__item">[m
+[31m-            <a href="#">Filmler</a>[m
+[31m-          </li>[m
+[31m-          <li class="main-nav__item">[m
+[31m-            <a href="#">Diziler</a>[m
+[31m-          </li>[m
+[31m-          <li class="main-nav__item main-nav__item--login">[m
+[31m-            <a href="#">Login</a>[m
+[31m-          </li>[m
+[31m-        </ul>[m
+[31m-      </nav>[m
+[31m-    </header>[m
+[31m-    <main>[m
+[31m-      <section id="showcase">[m
+[31m-        <h1>Welcome To MovieApp</h1>[m
+[31m-      </section>[m
+[31m-      <section id="how-it-works">[m
+[31m-        <div class="row">[m
+[31m-          <h2>How It Works?</h2>[m
+[31m-          <p>[m
+[31m-            We will show you step by step how to start watching your favorite[m
+[31m-            movies & tv shows starting now![m
+[31m-          </p>[m
+[31m-        </div>[m
+[31m-[m
+[31m-        <div class="row">[m
+[31m-          <div class="icon-box col-3">[m
+[31m-            <i class="fa-solid fa-right-to-bracket fa-3x"></i>[m
+[31m-            <h3>Register</h3>[m
+[31m-            <p>[m
+[31m-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil,[m
+[31m-              velit! Aliquid culpa iure blanditiis sequi.[m
+[31m-            </p>[m
+[31m-          </div>[m
+[31m-          <div class="icon-box col-3">[m
+[31m-            <i class="fa-brands fa-buffer fa-3x"></i>[m
+[31m-            <h3>Choose a Plan</h3>[m
+[31m-            <p>[m
+[31m-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil,[m
+[31m-              velit! Aliquid culpa iure blanditiis sequi.[m
+[31m-            </p>[m
+[31m-          </div>[m
+[31m-          <div class="icon-box col-3">[m
+[31m-            <i class="fa-regular fa-face-smile fa-3x"></i>[m
+[31m-            <h3>Enjoy Movies</h3>[m
+[31m-            <p>[m
+[31m-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil,[m
+[31m-              velit! Aliquid culpa iure blanditiis sequi.[m
+[31m-            </p>[m
+[31m-          </div>[m
+[31m-        </div>[m
+[31m-      </section>[m
+[31m-      <section id="features">[m
+[31m-        <div class="col-2 features__left"></div>[m
+[31m-        <div class="col-2 features__right">[m
+[31m-          <h3>Watch All Movies & TV Shows once they get released!</h3>[m
+[31m-          <p>[m
+[31m-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dicta[m
+[31m-            quaerat eligendi tempora tenetur doloribus odit, error nulla earum[m
+[31m-            modi at dignissimos sit autem explicabo nam architecto sequi quidem[m
+[31m-            accusantium?[m
+[31m-          </p>[m
+[31m-          <a href="#">View Features</a>[m
+[31m-        </div>[m
+[31m-      </section>[m
+[31m-      <section id="plans">[m
+[31m-        <div class="row">[m
+[31m-          <h2 class="section-title">Become a Premium Member</h2>[m
+[31m-          <div class="container clearfix">[m
+[31m-            <div class="plan">[m
+[31m-              <div class="inner-plan">[m
+[31m-                <h2>Free</h2>[m
+[31m-                <h3>[m
+[31m-                  0/month[m
+[31m-                  <ul class="plan__features">[m
+[31m-                    <li>HD avaible</li>[m
+[31m-                    <li>Unlimited Movies and TV shows</li>[m
+[31m-                    <li>Watch on your phone & tablet</li>[m
+[31m-                    <li>Download and watch offline</li>[m
+[31m-                    <li>Screens you can watch</li>[m
+[31m-                    <li>First Month Free</li>[m
+[31m-                  </ul>[m
+[31m-                  <div>[m
+[31m-                    <button>Choose Plan</button>[m
+[31m-                  </div>[m
+[31m-                </h3>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-            <div class="plan">[m
+[31m-              <div class="inner-plan recommended_plan">[m
+[31m-                <h2 class="plan__badge">Recommended</h2>[m
+[31m-                <h2>Basic</h2>[m
+[31m-                <h3>[m
+[31m-                  $9.99/month[m
+[31m-                  <ul class="plan__features">[m
+[31m-                    <li>HD avaible</li>[m
+[31m-                    <li>Unlimited Movies and TV shows</li>[m
+[31m-                    <li>Watch on your phone & tablet</li>[m
+[31m-                    <li>Download and watch offline</li>[m
+[31m-                    <li>Screens you can watch</li>[m
+[31m-                    <li>First Month Free</li>[m
+[31m-                  </ul>[m
+[31m-                  <div>[m
+[31m-                    <button>Choose Plan</button>[m
+[31m-                  </div>[m
+[31m-                </h3>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-            <div class="plan">[m
+[31m-              <div class="inner-plan">[m
+[31m-                <h2>Premium</h2>[m
+[31m-                <h3>[m
+[31m-                  $19.99/month[m
+[31m-                  <ul class="plan__features">[m
+[31m-                    <li>HD avaible</li>[m
+[31m-                    <li>Unlimited Movies and TV shows</li>[m
+[31m-                    <li>Watch on your phone & tablet</li>[m
+[31m-                    <li>Download and watch offline</li>[m
+[31m-                    <li>Screens you can watch</li>[m
+[31m-                    <li>First Month Free</li>[m
+[31m-                  </ul>[m
+[31m-                  <div>[m
+[31m-                    <button>Choose Plan</button>[m
+[31m-                  </div>[m
+[31m-                </h3>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-          </div>[m
+[31m-        </div>[m
+[31m-      </section>[m
+[31m-    </main>[m
+[31m-  </body>[m
+[31m-</html>[m
