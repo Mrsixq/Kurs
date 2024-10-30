@@ -148,3 +148,20 @@ img {
   border-radius: 50%;
   margin-bottom: 1.5rem;
 }
+
+
+/* About */
+
+#about {
+  color: #fff;
+}
+
+#about h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+#about p {
+  margin: 2rem 0;
+}
+
