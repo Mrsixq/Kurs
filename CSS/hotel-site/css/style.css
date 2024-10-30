@@ -239,3 +239,24 @@ img {
 .footer .social a {
   margin-right: 10px;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    margin: 0 3px;
+  }
+
+  .teams img {
+    width: 70%;
+  }
+}
